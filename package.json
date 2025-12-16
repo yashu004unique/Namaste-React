@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashu004unique/Namaste-React.git"
+  },
+  "author": "Yashu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashu004unique/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/yashu004unique/Namaste-React#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
