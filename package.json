@@ -18,7 +18,8 @@
   "homepage": "https://github.com/yashu004unique/Namaste-React#readme",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.16.3"
+    "parcel": "^2.16.3",
+    "prettier": "3.7.4"
   },
   "dependencies": {
     "react": "^19.2.3",
