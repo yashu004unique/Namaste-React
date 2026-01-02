@@ -97,8 +97,18 @@
         root.render(<Heading/>)
 
 
-        episode 6 ---
+        # episode 6 ---
         fetching data from data.js
         fetching data from live api (dint work due to cors error)
         login/logout toggle functionality
         search button- filtering out restaurants on the basis of name
+
+        # episode 7 ---
+        with the help of react-router-dom created routes for home, aboutus and contactus
+        createBrowserRouter, RouterProvider --- used for configuration
+        Error component -- useRouterError hook
+        nested routes/children routes -- used outlet component for this
+        server & client side routing
+        created diff pages for diff restaurants dynamically for Menu
+        useParams hook to get the id from url
+        edited dataList with required data (menu list)
