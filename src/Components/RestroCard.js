@@ -3,6 +3,7 @@ const RestroCard = (props) => {
   //   const { img, name, rating, cuisines, location } = props;
   const { data } = props;
   const { cloudinaryImageId, name, avgRating, cuisines, areaName } = data?.card;
+  //  const { name, avgRating, cuisines, areaName } = data.card.card.info;
   return (
     <div className="restro-card">
       <img src={CDN_URL + cloudinaryImageId} />

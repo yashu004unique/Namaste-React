@@ -35,6 +35,14 @@
     cursor: pointer;
 }
 
+ .nav-items button{
+    margin-right: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 60px;
+ }
+
 
 .body-container{
     /* border: 1px solid black; */

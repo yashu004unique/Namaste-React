@@ -95,3 +95,10 @@
 
         const root = ReactDOM.createRoot(document.getElementById("root"))
         root.render(<Heading/>)
+
+
+        episode 6 ---
+        fetching data from data.js
+        fetching data from live api (dint work due to cors error)
+        login/logout toggle functionality
+        search button- filtering out restaurants on the basis of name
