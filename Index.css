@@ -115,3 +115,14 @@ border-radius: 10px;
 .menu-container p{
     margin-bottom: 30px;
 }
+
+.user-card{
+    border: 2px solid black;
+    width: 250px;
+    padding: 50px;
+    margin: 30px;
+}
+
+.user-card button{
+    padding: 10px;
+}

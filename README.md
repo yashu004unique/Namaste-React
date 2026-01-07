@@ -112,3 +112,14 @@
         created diff pages for diff restaurants dynamically for Menu
         useParams hook to get the id from url
         edited dataList with required data (menu list)
+
+
+        #episode 8---
+        creating a class based component and functional component
+        passing props and receiving them, destructring them
+        rendering the components
+        updating the state variables
+        Life Cycles of class components when parent is functional component
+        ----------------------------------------------- class component
+        use of componentDidMount -- making api call using it
+        usecase of componentWillUnmount
