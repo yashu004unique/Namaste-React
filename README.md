@@ -114,7 +114,7 @@
         edited dataList with required data (menu list)
 
 
-        #episode 8---
+        # episode 8 ---
         creating a class based component and functional component
         passing props and receiving them, destructring them
         rendering the components
@@ -123,3 +123,12 @@
         ----------------------------------------------- class component
         use of componentDidMount -- making api call using it
         usecase of componentWillUnmount
+
+        # episode 9 ---
+
+        custom hooks
+        optimisation of the code using custom hooks (dint practise as there are no useffect api cals)
+        online/offline staus custom hook
+        reuseability of online/offline custom hook to show the status in header
+        creating smaller bundles and
+        even more optimisation of the app with help of Lazy Loading aka (Chunking/ Dynamic Bundling/ Code splitting/ on-demand loading/ dynamic import)

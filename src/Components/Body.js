@@ -2,13 +2,19 @@ import RestroCard from "./RestroCard";
 import dataList from "../utils/data";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [list, setList] = useState(dataList);
   const [searchText, setSearchText] = useState("");
   const [filteredList, setFilteredList] = useState(dataList);
+  const onlineStatus = useOnlineStatus();
 
   console.log("Body rendered");
+
+  if (onlineStatus === false) {
+    return <h1>Check your Internet Connection</h1>;
+  }
 
   return (
     <div className="body-container">
