@@ -132,3 +132,136 @@
         reuseability of online/offline custom hook to show the status in header
         creating smaller bundles and
         even more optimisation of the app with help of Lazy Loading aka (Chunking/ Dynamic Bundling/ Code splitting/ on-demand loading/ dynamic import)
+
+        # episode 10 ---
+
+        tailwind css
+
+        # episode 11 ---
+
+
+
+\*{
+margin: 0;
+padding: 0;
+}
+
+.header-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border: 1px solid black;
+}
+
+.logo-container{
+display: flex;
+align-items: center;
+
+}
+
+.logo{
+width: 150px;
+}
+
+.nav-items ul{
+list-style: none;
+display: flex;
+
+}
+
+.nav-items ul li{
+margin-right: 20px;
+font-size: 25px;
+font-weight: 600;
+cursor: pointer;
+}
+
+.nav-items ul li a{
+text-decoration: none;
+color: black;
+}
+
+.nav-items button{
+margin-right: 10px;
+padding: 8px 10px;
+cursor: pointer;
+border-radius: 8px;
+width: 60px;
+}
+
+.body-container{
+border: 1px solid black;
+margin-top: 2px;
+padding: 10px;
+}
+
+.search{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.search input{
+width: 30%;
+height: 30px;
+}
+
+.search button{
+margin-left: 5px;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.card-container{
+display: flex;
+flex-wrap: wrap;
+}
+
+.card-container a{
+text-decoration: none;
+color: black;
+}
+
+.restro-card{
+background-color:#f0eded;
+border-radius: 10px;
+width: 230px;
+margin: 20px;
+padding: 5px;
+cursor: pointer;
+}
+
+.restro-card:hover{
+border: 1px solid black;
+border-radius: 10px;
+}
+
+.restro-card img{
+width: 100%;
+height: 200px;
+border-radius: 10px;
+}
+
+.menu-container{
+margin: 20px;
+}
+
+.menu-container ul li{
+list-style: none;
+}
+
+.menu-container p{
+margin-bottom: 30px;
+}
+
+.user-card{
+border: 2px solid black;
+width: 250px;
+padding: 50px;
+margin: 30px;
+}
+
+.user-card button{
+padding: 10px;
+}
