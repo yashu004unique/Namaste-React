@@ -7,7 +7,7 @@ import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
-// import Grocery from "./Components/Grocery";
+// import Grocery from "./Components/Grocery";   implemented lazy loading
 import { lazy, Suspense } from "react";
 const Grocery = lazy(() => import("./Components/Grocery"));
 
