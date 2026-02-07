@@ -1,43 +1,17 @@
 import RestroCard from "./RestroCard";
 // import dataList from "../utils/data";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import useRestaurant from "../utils/useRestaurant";
 
 const Body = () => {
-  const [list, setList] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const [filteredList, setFilteredList] = useState([]);
 
   const onlineStatus = useOnlineStatus();
+  const { list, setList, filteredList, setFilteredList } = useRestaurant();
 
   console.log("Body rendered");
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    // const data = await fetch(
-    //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.747394&lng=83.23298&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null",
-    // );
-    const data = await fetch("http://localhost:5000/restaurants");
-    const json = await data.json();
-    console.log(json);
-
-    // const hotels = json?.data?.cards?.filter(
-    //   (c) =>
-    //     c.card?.card?.["@type"] ===
-    //     "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-    // );
-    // console.log(hotels);
-
-    // setList(hotels);
-    // setFilteredList(hotels);
-
-    setList(json);
-    setFilteredList(json);
-  };
 
   if (onlineStatus === false) {
     return <h1>Check your Internet Connection</h1>;
