@@ -1,4 +1,7 @@
 import { CDN_URL } from "../utils/constant";
+import UserContext from "../utils/Context/UserContext";
+import { useContext } from "react";
+
 const RestroCard = (props) => {
   //   const { img, name, rating, cuisines, location } = props;
   const { data } = props;
@@ -11,6 +14,8 @@ const RestroCard = (props) => {
 
   const { name, avgRating, cuisines, areaName, cloudinaryImageId } = data;
 
+  const { loggedInUser } = useContext(UserContext);
+
   return (
     <div className="restro-card w-3xs h-[370] hover:border-2 rounded-lg p-2 bg-gray-100">
       <img
@@ -21,8 +26,22 @@ const RestroCard = (props) => {
       <h4 className="font-medium"> ⭐ {avgRating}</h4>
       <p>{cuisines.join(", ")}</p>
       <p>{areaName}</p>
+      <p>User: {loggedInUser}</p>
     </div>
   );
+};
+
+export const withPromotedLabel = (RestroCard) => {
+  return (props) => {
+    return (
+      <>
+        <label className="absolute bg bg-yellow-300 text-blue-700 font-bold m-1 p-1 rounded-sm rounded-br-2xl">
+          Promoted
+        </label>
+        <RestroCard {...props} />
+      </>
+    );
+  };
 };
 
 export default RestroCard;

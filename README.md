@@ -27,7 +27,7 @@
 
         # episode 9 ---
         - custom hooks
-        - optimisation of the code using custom hooks (dint practise as there are no useffect api cals)
+        - optimisation of the code using custom hooks (dint practise as there are no useffect api cals) => (solved aftr 10th episode)
         - online/offline status custom hook
         - reuseability of online/offline custom hook to show the status in header
         - creating smaller bundles and
@@ -36,10 +36,19 @@
         # episode 10 ---
         - tailwind css (removed custom css nd used tailwind css for styling)
 
-        ## Cors Resolvation & Backend Server Setup ----
+        *#* Cors Resolvation & Backend Server Setup ----
         - cors error resolved
         - got the live data from swiggy and updated the code of ep-6
         - again changed it by building the server.js
         - now getting the code from our server itself and updated the code of ep-6 & 7
 
-        ## updated the code of ep-9
+        *#* updated the code of ep-9
+        - optimisation of the code using custom hooks
+
+        # episode 11 ---
+        - Higher Order Component - created promote label using it
+        - accordians in menu page
+        - Lifting Up the State - used it for making only one accordian open at a time
+        - React Context - using it showed userName in Header, restroCards, & About
+        - creating, using and providing context (both in functional and class based components)
+        - also created a UserName input box to modify username using context

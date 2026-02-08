@@ -16,9 +16,10 @@ const dataList = [
       areaName: "N A D",
       cuisines: ["Healthy Food", "South Indian"],
       avgRating: 4.3,
+      promoted: true,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Veg Millet Biryani",
@@ -103,9 +104,10 @@ const dataList = [
       areaName: "Kakani Nagar",
       cuisines: ["Biryani", "Chinese", "South Indian", "Tandoor", "Lebanese"],
       avgRating: 3.5,
+      promoted: false,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Chicken Biryani",
@@ -185,9 +187,10 @@ const dataList = [
       areaName: "Jagdamba",
       cuisines: ["Chinese", "Tibetan", "Desserts"],
       avgRating: 4.1,
+      promoted: false,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Veg Hakka Noodles",
@@ -267,9 +270,10 @@ const dataList = [
       areaName: "Nad Junction",
       cuisines: ["Biryani", "Kebabs", "North Indian", "Hyderabadi"],
       avgRating: 3.8,
+      promoted: true,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Hyderabadi Chicken Biryani",
@@ -348,9 +352,10 @@ const dataList = [
       areaName: "Dwaraka Nagar",
       cuisines: ["Biryani", "Chinese", "Tandoor", "Beverages"],
       avgRating: 4.4,
+      promoted: true,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Veg Biryani",
@@ -428,19 +433,12 @@ const dataList = [
         "FOOD_CATALOG/IMAGES/CMS/2025/5/15/34d295b8-bbdb-45a7-b7ea-dba990814f18_e391c8f9-e7c2-4337-9aa9-d27f3b9bf934.jpeg",
       locality: "Laxmi Nagar",
       areaName: "Simhachalam",
-      cuisines: [
-        "Biryani",
-        "Kebabs",
-        "Mughlai",
-        "Lucknowi",
-        "Hyderabadi",
-        "Desserts",
-        "Beverages",
-      ],
+      cuisines: ["Biryani", "Mughlai", "Lucknowi", "Desserts", "Beverages"],
       avgRating: 3.7,
+      promoted: false,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Special Chicken Biryani",
@@ -519,18 +517,17 @@ const dataList = [
       areaName: "Simhachalam",
       cuisines: [
         "Biryani",
-        "North Indian",
         "Kebabs",
         "Mughlai",
-        "Lucknowi",
         "Hyderabadi",
         "Desserts",
         "Beverages",
       ],
       avgRating: 4.2,
+      promoted: true,
       categories: [
         {
-          name: "Recommendations",
+          name: "Recommended",
           items: [
             {
               name: "Royal Chicken Biryani",
@@ -621,6 +618,7 @@ app.get("/restaurants", (req, res) => {
       cloudinaryImageId: r.card.cloudinaryImageId,
       locality: r.card.locality,
       areaName: r.card.areaName,
+      promoted: r.card.promoted,
     })),
   );
 });

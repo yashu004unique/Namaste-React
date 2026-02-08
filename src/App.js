@@ -10,13 +10,18 @@ import RestaurantMenu from "./Components/RestaurantMenu";
 // import Grocery from "./Components/Grocery";   implemented lazy loading
 import { lazy, Suspense } from "react";
 const Grocery = lazy(() => import("./Components/Grocery"));
+import UserContext from "./utils/Context/UserContext";
+import { useState } from "react";
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState("Yashu");
   return (
-    <div>
-      <Header />
-      <Outlet />
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div>
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
