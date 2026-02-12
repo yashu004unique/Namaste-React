@@ -35,7 +35,7 @@ const Body = () => {
         />
 
         <button
-          className="border-2 p-1 rounded-md cursor-pointer bg-gray-100"
+          className="border-2 p-1 rounded-md cursor-pointer bg-gray-100 transition transform active:scale-95"
           onClick={() => {
             setFilteredList(
               list.filter((res) => {
@@ -49,7 +49,7 @@ const Body = () => {
           Search
         </button>
         <button
-          className="filter-btn border-2 p-1 rounded-md cursor-pointer  bg-gray-100"
+          className="filter-btn border-2 p-1 rounded-md cursor-pointer  bg-gray-100 transition transform active:scale-95"
           onClick={() => {
             setFilteredList(list.filter((res) => res.avgRating > 4));
           }}

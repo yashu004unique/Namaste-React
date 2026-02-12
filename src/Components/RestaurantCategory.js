@@ -20,13 +20,19 @@ function RestaurantCategory({ category, showAccordian, setShowIndex }) {
       {/* Accordian Body */}
 
       <div>
-        {showAccordian &&
-          category.items.map((item, index) => (
-            <ItemList key={index} item={item} />
-          ))}
+        {showAccordian && <ItemList type="menu" item={category.items} />}
       </div>
     </div>
   );
 }
 
 export default RestaurantCategory;
+
+{
+  /* <div>
+        {showAccordian &&
+          category.items.map((item, index) => (
+            <ItemList key={index} item={item} />
+          ))}
+      </div> */
+}

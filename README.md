@@ -52,3 +52,12 @@
         - React Context - using it showed userName in Header, restroCards, & About
         - creating, using and providing context (both in functional and class based components)
         - also created a UserName input box to modify username using context
+
+        # episode 12 ---
+        - Redux Toolkit
+        - Built cart feature
+        - Builing store and connecting it to app
+        - Creating CartSlice and adding it in store
+        - writing the data using useDispatch (adding info into store)
+        - reading the data using useSelector (subscribing to the store, to get the data from it)
+        - implimented add items to cart and clear cart actions

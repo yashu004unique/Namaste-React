@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import Body from "./Components/Body";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import AboutUs from "./Components/AboutUs";
-import ContactUs from "./Components/ContactUs";
+import Cart from "./Components/Cart";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
 // import Grocery from "./Components/Grocery";   implemented lazy loading
@@ -12,16 +12,20 @@ import { lazy, Suspense } from "react";
 const Grocery = lazy(() => import("./Components/Grocery"));
 import UserContext from "./utils/Context/UserContext";
 import { useState } from "react";
+import { Provider } from "react-redux";
+import Store from "./utils/Redux/Store";
 
 const AppLayout = () => {
   const [userName, setUserName] = useState("Yashu");
   return (
-    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-      <div>
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={Store}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div>
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -32,7 +36,7 @@ const appRouter = createBrowserRouter([
     children: [
       { path: "/", element: <Body /> },
       { path: "/about", element: <AboutUs /> },
-      { path: "/contact", element: <ContactUs /> },
+      { path: "/cart", element: <Cart /> },
       { path: "/restaurantMenu/:id", element: <RestaurantMenu /> },
       {
         path: "/grocery",

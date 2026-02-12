@@ -22,11 +22,13 @@
     "prettier": "3.7.4"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/postcss": "^4.1.18",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.11.0",
     "tailwindcss": "^4.1.18"
   }

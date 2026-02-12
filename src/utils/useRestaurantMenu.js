@@ -5,7 +5,7 @@ import { MENU_URL } from "../utils/constant";
 function useRestaurantMenu() {
   const [menu, setMenu] = useState(null);
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   useEffect(() => {
     fetchMenu();
@@ -15,7 +15,7 @@ function useRestaurantMenu() {
     // const data = await fetch(`http://localhost:5000/menu/${id}`);
     const data = await fetch(MENU_URL + id);
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     setMenu(json);
   };
   return menu;

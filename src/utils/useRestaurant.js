@@ -12,7 +12,7 @@ function useRestaurant() {
   const fetchData = async () => {
     const data = await fetch(RESTAURANT_URL);
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     setList(json);
     setFilteredList(json);
