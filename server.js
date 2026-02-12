@@ -603,11 +603,6 @@ const dataList = [
   },
 ];
 
-// Root route
-app.get("/", (req, res) => {
-  res.send("Restaurant backend is running! Try /restaurants or /menu/:id");
-});
-
 // Endpoint for restaurant cards
 app.get("/restaurants", (req, res) => {
   res.json(
